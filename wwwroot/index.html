@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AWEN Traffic Test</title>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        max-width: 720px;
+        margin: 40px auto;
+        padding: 0 16px;
+        line-height: 1.6;
+      }
+      code {
+        background: #f4f4f4;
+        padding: 2px 6px;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>AWEN 트래픽 테스트 WAS</h1>
+    <p>배포가 정상이면 이 페이지가 보입니다.</p>
+    <ul>
+      <li>헬스체크: <code>/health</code></li>
+      <li>대용량 응답: <code>/api/traffic?bytes=1048576</code> (약 1MB)</li>
+    </ul>
+  </body>
+</html>
