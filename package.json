@@ -5,7 +5,11 @@
   "description": "AWEN WAS 트래픽 테스트용 최소 Node.js 서버",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "k6": "node scripts/k6-run.js",
+    "k6:light": "node scripts/k6-run.js --preset=light",
+    "k6:medium": "node scripts/k6-run.js --preset=medium",
+    "k6:local": "node scripts/k6-run.js --preset=local"
   },
   "engines": {
     "node": ">=20"
